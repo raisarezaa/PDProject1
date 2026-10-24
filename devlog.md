@@ -49,3 +49,16 @@ Sample 5 builds up history ($1 through $4) and gives 6, 30, 120, 360,
 
 Plan for this session: Run some edge cases to thoroughly test the code, happy 
 that the sample runs worked with the code 
+
+# 10-23-2026 11:37 pm
+
+Thoughts so far: Continued to test some edge cases and here are the results:
+Edge case 1: +1.5 2 gave 3.5, shows that decimals work
+edge case 2: / 1 0 gave Invalid Expression, shows what happens when div by 0
+edge case 3: --5 GAVE 5, shows two negatives cancel
+Edge case 4: + 1 gave Invalid expression, shows what happens when missing 2nd oper
+
+Plan for this session: Done with code and testing, will now write the README and
+submit zip file for project submission. I enjoyed completing the project using
+devlogs as this truly allowed a form of journaling experience for me when coding and 
+makes the experience of this project more fun and enjoyable for me. 
