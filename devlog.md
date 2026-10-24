@@ -30,8 +30,22 @@ batch mode, then check edge cases like /5 0, $0 and an empty line.
 Thoughts so far: I forgot to commit during the evening session, so this is a 
 catch up. Tonight I got a full working version of the calculator. I tested two 
 samples and got this: Sample 1 (*+ 1 1 /4 2) gives 4. 
-This checked + and * with nesting, and /. Sample 2 (+1 1, then /5$1) gives 2 and 
+Sample 2 (+1 1, then /5$1) gives 2 and 
 then 2.5. This checked history with $1, and showed me / is regular division.
 
 Plan for this session; Continue doing the sample runs that were provided and
 use them to test my code, along with some edge cases as well and paste results here.
+
+# 10-23-2026 11:05 pm
+
+Thoughts so far: Continued to test with the samples, for Sample 3 I got 
+1: 2
+2: 19.5
+Sample 4 is all errors. +1 and /5 $1 with no history give "Invalid
+expression", +1+1+1 1 1 gives "Unexpected trailing characters", and /5 0
+is an error for dividing by zero. +1-1 correctly gives 0.
+Sample 5 builds up history ($1 through $4) and gives 6, 30, 120, 360,
+720, so the history lookup works.
+
+Plan for this session: Run some edge cases to thoroughly test the code, happy 
+that the sample runs worked with the code 
